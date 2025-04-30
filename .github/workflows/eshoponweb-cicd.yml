@@ -2,10 +2,10 @@ on: workflow_dispatchname: eShopOnWeb Build and Test
 
 #Triggers (uncomment line below to use it)
 on: workflow_dispatch
-RESOURCE-GROUP: rg-eshoponweb-westeurope
+
 #Environment variables https://docs.github.com/en/actions/learn-github-actions/environment-variables
 env:
-  RESOURCE-GROUP: rg-eshoponweb-NAME
+  RESOURCE-GROUP: rg-eshoponweb-westeurope
   LOCATION: westeurope
   TEMPLATE-FILE: infra/webapp.bicep
   SUBSCRIPTION-ID: f4f5a629-b328-4e8b-82f7-3e618cc3b866
