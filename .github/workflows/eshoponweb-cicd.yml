@@ -1,15 +1,15 @@
-name: eShopOnWeb Build and Test
+on: workflow_dispatchname: eShopOnWeb Build and Test
 
 #Triggers (uncomment line below to use it)
-#on: [push, workflow_dispatch]
-
+on: workflow_dispatch
+RESOURCE-GROUP: rg-eshoponweb-westeurope
 #Environment variables https://docs.github.com/en/actions/learn-github-actions/environment-variables
 env:
   RESOURCE-GROUP: rg-eshoponweb-NAME
   LOCATION: westeurope
   TEMPLATE-FILE: infra/webapp.bicep
-  SUBSCRIPTION-ID: YOUR-SUBS-ID
-  WEBAPP-NAME: eshoponweb-webapp-NAME
+  SUBSCRIPTION-ID: f4f5a629-b328-4e8b-82f7-3e618cc3b866
+  WEBAPP-NAME: devops-webapp-westeurope-50846388
 
 
 jobs:
